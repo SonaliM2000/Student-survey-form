@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Student Survey Form using HTML and CSS
+	</title>
+ 
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="formstyle.css" />
+
+</head>
+<!-- Heading for the form -->
+<body>
+	<h1 style="color:rgb(203, 218, 69)"> Student Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Name division -->
+		<div class="form-control">
+			<label for="name" id="label-name"> 
+				Name <span class="required-field"></span>
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="fname"
+				placeholder="Enter your first name" required/>
+				<input type="text"
+				id="lname"
+				placeholder="Enter your last name" required/>
+		</div>
+		<!-- Address division -->
+		<div class="form-control">
+			<label for="address" id="add">
+				Address <span class="required-field"></span>
+			</label>
+
+			<!-- Input Type Text and number -->
+			<input type="text"
+				id="address"
+				placeholder="Enter your street address" required/>
+				<input type="text"
+				id="city"
+				placeholder="Enter your city" required/>
+				<input type="text"
+				id="state"
+				placeholder="Enter your state" required/>
+				<input type="number"
+				id="zip"
+				placeholder="Enter your zip" required/>
+		</div>
+		<!-- Contact division -->
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Contact <span class="required-field"></span>
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" required/>
+				<!-- Input Type tel-->
+				<input type="tel"
+				id="phone"
+				placeholder="Enter your phone number" required/>
+		</div>
+		<!-- Survey date division -->
+		<div class="form-control">
+			<label for="date" id="cdate">
+				Enter your survey date <span class="required-field"></span>
+			</label>
+
+			<!-- Input Type date -->
+			<input type="date" name="surveydate" required/>
+				
+		</div>
+		<!-- best part of college division -->
+		<div class="form-control">
+			<label>What do you liked most about the campus? 
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Students</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Location</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Campus</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Atmosphere</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Dorm rooms</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Sports</input></label>
+			<label for="inp-7">
+		</div>
+
+		<!-- intresting fact division -->
+		<div class="form-control">
+			<label>
+				How you became interested in the university?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Friends</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Television</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Internet</input>
+			</label>
+			<label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">Other</input>
+			</label>
+			
+		</div>
+		<!-- recomendation division -->
+		<div class="form-control">
+			<label for="role" id="label-role">
+				How will you recommend this school to other prospective students?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="verylikely">Very Likely</option>
+				<option value="likely">Likely</option>
+				<option value="unlikely">
+					Unlikely
+				</option>
+			</select>
+		</div>
+		<!-- raffel division -->
+		<div class="form-control">
+			<label for="raffel" id="label-raffel">
+				Raffel
+				<small>(To win a free movie ticket.)</small>
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="raffel"
+				placeholder="Enter at least ten comma separated numbers ranging from 1 to 100."/>
+				
+		</div>
+
+		<!-- Comment division -->
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div> 
+
+		<!-- Cancel button -->
+		<button class=Cancel type="reset" value="Reset">
+			 Cancel
+		</button>
+		<!-- Submit button -->
+		<button class =Submit type="submit" value="Submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
